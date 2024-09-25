@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <style>
+    body{background-color: #333333; color: #f0f0f0;}
+</style> -->
+
+<style>
+    #sendItem {
+        background-color: rgb(126, 0, 0);
+        width: 200px;
+        margin: 30px;
+        padding: 30px;
+
+        transition: 3s all;
+        left: 0;
+
+    }
+
+    .leftTrans{left: 3000px !important; position: absolute; }
+
+</style>
+
+    <script type="text/javascript">
+        //Aktiveeritud teksti kommentaariks muutmiseks kasuta kombinatsiooni Ctrl + k + c ja kustutamiseks Ctrl + k + q
+    //Simple javascript alert
+        // alert("Watch out! Red Fluffy goats are on their way!");
+    
+        // document.write(" I'm printing a fluffy red goat... <br>");
+        // document.write(" I'm printing a fluffy red goat... <br>");
+        // document.write(" I'm printing a fluffy red goat... <br>");
+        // document.write(" I'm printing a fluffy red goat... <br>");
+
+        //Kahte kõrvuti kaldkriipsu kasutatakse javascriptis kommenteerimiseks 
+        /*Teine variant kommenteerimiseks*/
+        //Javascript variables let-iga; kasuta ainult tähti, numbreid ja alakriipse
+        // let Katriin = 9;
+        // document.write(Katriin);
+
+        //Variables types
+        // var name = "Katriin";
+        // document.write(name);
+
+        //Using different types of variables
+        // document.write(3+3);
+        // var num1 = 4;
+        // var num2 = 2;
+        // document.write(num1 + num2);
+
+        // var num1 = "I love you";
+        // var num2 = 2;
+        // document.write(num1 + num2);
+
+        // var num1 = 4;
+        // var num2 = 2;
+        // document.write(num1 / num2);
+
+        // var num1 = 4;
+        // var num2 = 2;
+        // num1++; // num1-- lahutab
+
+        // document.write(num1);
+
+        //Javascript functions
+        // function Congrats(){
+
+        // document.write("starting congrats");
+        // alert("Welcome to the 'hamster mobile' website, where you can find a cheap vichile to your beloved hamster.")
+        // document.write("ending congrats");
+
+        // }
+
+
+        // Congrats();
+
+        // Congrats();
+
+        //Functions parameters + multiple parameters (example number and prize)
+
+//         function ShowCurtain(CurtainNumber , prize){
+
+//         alert("You opened curtain number " + CurtainNumber + ", You Won: " + prize);
+
+// }
+
+// 15 Return Statement 16 Calling function from another function
+        // function BasicAddition(num1 , num2){
+
+        // return num1+ num2;
+
+        // }
+
+        // var result = BasicAddition(1, 2);
+        // document.write(result);
+
+        //Good night and good morning
+        // function GoodNight(){
+        //     document.write("Good night! <br>");
+        //     GoodMorning();
+        // }
+
+        // function GoodMorning(){
+        //     document.write("Good morning! <br>");
+        //     GoodNight();
+        // }
+
+        // function Start(){
+        //     GoodMorning();
+        // }
+
+        // Start();
+
+        // 17 If Statement - saab nii suurem/väiksem/võrdne vaadata
+
+        // var num1 = 2;
+        // var num2 = 2;
+
+        // if(num1 == num2){
+
+        //     document.write("If i was hamster-tamer, my cow was broken...");
+
+        // }
+
+        // var num1 = 3;
+        // var num2 = 2;
+
+        // if(num1 != num2){
+
+        //     document.write("If i was hamster-tamer, my cow was broken...");
+
+        // }
+
+        // 18 Else & else if - can have as many else if-s as you wish
+
+        // function ChoppingBanana(){
+        //     document.write('Chopping Banana..');
+        // }
+
+        // function ChoppingPineaple(){
+        //     document.write('Chopping Pineapple..');
+        // }
+
+        // function ChoppingCherry(){
+        //     document.write('Chopping Cherry..');
+        // }
+
+        // if("banana" == "pineapple"){
+        //     ChoppingBanana();
+        // } else if("banana" == "cherry"){
+        //     ChoppingCherry();
+        // } else{
+        //     ChoppingPineapple();
+        // }
+
+        // 19 Switch
+//         function VendingPendingMachine(pendingTime){
+//             switch(pendingTime){
+//                 case 1:
+//                 //..case for #1
+//                 PendingMessage(pendingTime);
+//                 break;
+//                 case 1:
+//                 //..case for #2
+//                 PendingMessage(pendingTime);
+//                 break;
+//                 case 1:
+//                 //..case for #3
+//                 PendingMessage(pendingTime);
+//                 break;
+//                 default:
+//                 //..case for the rest of the buttons
+//                 PendingMessage(pendingTime);
+//                 break;
+//             }
+//         }
+
+// function PendingMessage(time){
+//     alert("The Vending Pending Machine says you have to wait " + time + " minutes!")
+// }
+
+// 20 For Loop
+    // var loopNum = 50;
+    // var text = "I will never ride my hamster-mobile to school ever again.";
+    // function WriteLineMachine(lineText){
+
+    //     for( i=0 ; i < loopNum ; i++){
+    //         Write(lineText);
+    //         //...some write function...
+
+    //     }
+
+    // }
+
+    // function Write(lineText){
+    //     document.write(lineText);
+    // }
+
+    // function StartMachine(lineText){
+    //     WriteLineMachine(lineText);
+    // }
+
+    // StartMachine(text);
+    // 20 For loop lõppeb
+
+    // 21 Array - starts with 0, 1, 2, 3 jne.
+    // var names = new array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
+
+    // //first half
+    // // document.write(names[3] + "<br/>");
+    // // names[3] = "Tammy";
+    // // document.write(names[3] + "<br/>");
+    // //second half
+    // names.push("Martha", "George");
+    // document.write(names + "<br>");
+
+    //     names.sort();
+    //     document.write(names + "<br>");
+
+    //     names.reverse();
+    //     document.write(names + "<br>");
+
+    // 23 Javascript on steroids
+
+    function CheckValidation(){
+        var password = document.getElementById("password").value;
+        if(password != "1234"){
+            alert("Caution! Password is Incorrect");
+        }else{
+
+            // Success!
+            
+            var y = document.getElementById("sendItem");
+            y.className += "leftTrans";
+        }
+    }
+    </script>
+ </head>
+ <body>
+
+    <!--Võitmise nupud - klikates näitab modalis vastavat auhinda-->
+<!-- <h1>Let's make a deal!</h1>
+
+<input type="button" value="Curtain 1" onclick=" ShowCurtain(1, 'a shiny brand new tooth pick')"/>
+<input type="button" value="Curtain 2" onclick=" ShowCurtain(2, 'a colorful rubber band')"/>
+<input type="button" value="Curtain 3" onclick=" ShowCurtain(3, 'a living lama')"/> -->
+
+<!-- 19 Switch -->
+<!-- <h1>The Vending Pending Machine!</h1>
+
+<input type="button" value="1" onclick="VendingPendingMachine('1')" />
+<input type="button" value="2" onclick="VendingPendingMachine('2')"/>
+<input type="button" value="3" onclick="VendingPendingMachine('3')"/>
+<input type="button" value="4" onclick="VendingPendingMachine('7')"/> -->
+ 
+<!-- 23 Javascript on steroids -->
+ <div id="sendItem">
+
+    <form>
+    Password: <br/>
+    <br/>
+    <input type="password" id="password" placeholder="Password" />
+    <br/>
+    <br/>
+    <input type="button" id="submit" value="send!" onclick="checkValidation();" />
+    </form>
+
+ </div>
+
+</body>
+ </html>
